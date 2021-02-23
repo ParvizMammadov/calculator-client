@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator App</title>
+</head>
+<body>
+    <form action="/calculate" method="post">
+        <label for="num1Field">Enter the 1st number:</label>
+        <input type="text" name="num1" id="num1Field"> <br>
+        <label for="num2Field">Enter the 2nd number:</label>
+        <input type="text" name="num2" id="num2Field"> <br>
+
+        <label for="operations">Choose an operation:</label>
+        <select name="operator" id="operations">
+            <option value="ADD">Add</option>
+            <option value="SUBTRACT">Subtract</option>
+            <option value="MULTIPLY">Multiply</option>
+            <option value="DIVIDE">Divide</option>
+        </select> <br>
+
+        <input type="submit" value="Calculate">
+    </form>
+</body>
+</html>
